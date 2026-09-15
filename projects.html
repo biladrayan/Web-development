@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected accessible web design and front-end development projects by Alex Morgan.">
+  <meta name="robots" content="index, follow">
+  <title>Projects | Alex Morgan</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><div class="container header-content">
+    <a class="brand" href="index.html" aria-label="Alex Morgan home">Alex Morgan</a>
+    <nav aria-label="Primary navigation"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a aria-current="page" href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">◐</span><span class="theme-label">Theme</span></button>
+  </div></header>
+  <main id="main-content" class="container">
+    <header class="page-intro"><h1>Selected projects</h1><p>A few examples of accessible, user-centered work.</p></header>
+    <section aria-labelledby="project-list-heading">
+      <h2 id="project-list-heading">Portfolio</h2>
+      <div class="project-grid">
+        <article class="project-card project-library"><p class="project-type">Civic platform</p><h3>Community Library</h3><p>A responsive site that makes events, services, and digital resources easy to discover.</p><a href="#library-details">Read the Library case study <span aria-hidden="true">→</span></a></article>
+        <article class="project-card project-market"><p class="project-type">E-commerce</p><h3>Green Market</h3><p>An online shop structure designed for readable product information and simple checkout paths.</p><a href="#market-details">Read the Green Market case study <span aria-hidden="true">→</span></a></article>
+        <article class="project-card project-northstar"><p class="project-type">Nonprofit</p><h3>Northstar Nonprofit</h3><p>A donor-focused information site with accessible calls to action and clear impact reporting.</p><a href="#northstar-details">Read the Northstar case study <span aria-hidden="true">→</span></a></article>
+      </div>
+    </section>
+    <section class="visually-separated" aria-label="Project case study summaries">
+      <h2>Case study summaries</h2>
+      <article id="library-details"><h3>Community Library</h3><p>Improved content grouping and keyboard navigation to make information easier to access.</p></article>
+      <article id="market-details"><h3>Green Market</h3><p>Created consistent labels, error messaging, and focus styles for shopping tasks.</p></article>
+      <article id="northstar-details"><h3>Northstar Nonprofit</h3><p>Prioritized key actions and made impact data understandable without relying on color alone.</p></article>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© 2026 Alex Morgan. Built with accessibility in mind.</p></div></footer>
+</body>
+</html>
