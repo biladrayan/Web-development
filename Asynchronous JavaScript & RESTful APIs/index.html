@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive weather dashboard powered by the Open-Meteo public REST API.">
+  <title>Skyline | Live Weather</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="dashboard">
+    <header class="masthead">
+      <div><p class="eyebrow">Real-time conditions</p><h1>Skyline</h1></div>
+      <form id="search-form" class="search-form" role="search">
+        <label class="sr-only" for="city-input">Search by city name</label>
+        <input id="city-input" name="city" type="search" placeholder="Search a city" autocomplete="off" required>
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <p id="status" class="status" role="status" aria-live="polite">Search for a city to see the weather.</p>
+    <section id="weather-content" hidden aria-live="polite">
+      <header class="location-header"><div><p id="location-country" class="eyebrow"></p><h2 id="location-name">—</h2></div><p id="updated-time">—</p></header>
+      <section class="current-card" aria-labelledby="now-heading">
+        <div><p id="now-heading" class="eyebrow">Current weather</p><p id="temperature" class="temperature">—</p><p id="weather-description" class="condition">—</p></div>
+        <div id="weather-symbol" class="weather-symbol" aria-hidden="true">☀</div>
+        <dl class="metrics"><div><dt>Humidity</dt><dd id="humidity">—</dd></div><div><dt>Wind</dt><dd id="wind-speed">—</dd></div><div><dt>Feels like</dt><dd id="apparent-temperature">—</dd></div></dl>
+      </section>
+      <section class="forecast-section" aria-labelledby="forecast-heading"><h2 id="forecast-heading">5-day forecast</h2><div id="forecast" class="forecast"></div></section>
+    </section>
+  </main>
+</body>
+</html>
